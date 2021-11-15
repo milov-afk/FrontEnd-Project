@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 50%;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+@-webkit-keyframes easeLeftToRight {
+  from {
+    right: 16%;
+    opacity: 0;
+  }
+  to {
+    right: 15%;
+    opacity: 1;
+  }
+}
+
+@keyframes easeLeftToRight {
+  from {
+    right: 16%;
+    opacity: 0;
+  }
+  to {
+    right: 15%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-size: 1.4rem;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: cadetblue;
+  background: #747474 url(/styles/images/wallpaper2.png) no-repeat center/cover;
+  background-blend-mode: multiply;
+}
+
+.container .login-box {
+  position: absolute;
+  width: 360px;
+  height: 500px;
+  left: calc(50% - 180px);
+  top: calc(50% - 250px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  background: radial-gradient(circle, #f1f1f1 0%, rgba(241, 241, 241, 0.95) 50%, rgba(241, 241, 241, 0.9) 100%);
+  -webkit-box-shadow: 0px 50px 18px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 50px 18px -8px rgba(0, 0, 0, 0.5);
+}
+
+.container .login-box p {
+  color: black;
+  font-size: 2.8rem;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 30px auto;
+}
+
+.container .login-box .username, .container .login-box .password {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 15px auto;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: #e4e2e2;
+  border-radius: 10px;
+}
+
+.container .login-box .username:focus, .container .login-box .password:focus {
+  background-color: whitesmoke;
+}
+
+.container .login-box label {
+  font-size: 1.3rem;
+}
+
+.container .login-box input[type='checkbox'] {
+  margin: 0 0 30px 10px;
+}
+
+.container .login-box button[type="submit"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background: #e4e2e2 url(/styles/icons/login-button.svg) center no-repeat;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.container .login-box button[type="submit"]:hover {
+  background-color: cadetblue;
+}
+
+.container .login-box a {
+  color: darkslategrey;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  margin: 0 auto;
+}
+
+.container .login-box a:hover {
+  color: cadetblue;
+}
+
+.container .login-box .help-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.container .login-box .help-buttons a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 1.2rem;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  margin: 2px auto;
+}
+
+.container .login-box .help-buttons a:hover {
+  color: cadetblue;
+}
+/*# sourceMappingURL=login.css.map */

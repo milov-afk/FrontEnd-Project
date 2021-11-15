@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 50%;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+@-webkit-keyframes easeLeftToRight {
+  from {
+    right: 16%;
+    opacity: 0;
+  }
+  to {
+    right: 15%;
+    opacity: 1;
+  }
+}
+
+@keyframes easeLeftToRight {
+  from {
+    right: 16%;
+    opacity: 0;
+  }
+  to {
+    right: 15%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.4rem;
+  height: 100vh;
+  width: 100vw;
+  background: #747474 url(/styles/images/wallpaper.png) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 15%;
+}
+
+.container .greeting {
+  width: 100%;
+  margin: auto 0;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.container .greeting .message {
+  color: #f1f1f1;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+.container .greeting .message-2 {
+  margin-left: 1.5rem;
+  color: #e4e2e2;
+}
+
+.container .register-box {
+  position: absolute;
+  right: 15%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  background: radial-gradient(circle, #f1f1f1 0%, rgba(241, 241, 241, 0.95) 50%, rgba(241, 241, 241, 0.9) 100%);
+  padding: 50px;
+  -webkit-animation-name: easeLeftToRight;
+          animation-name: easeLeftToRight;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 50px 18px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 50px 18px -8px rgba(0, 0, 0, 0.5);
+}
+
+.container .register-box p {
+  color: black;
+  font-size: 2.8rem;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 30px auto;
+}
+
+.container .register-box form .register-req {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 30px 10px;
+}
+
+.container .register-box form .register-req div label {
+  font-size: 1.3rem;
+}
+
+.container .register-box form .register-req div label a {
+  font-size: 1.3rem;
+}
+
+.container .register-box .username, .container .register-box .password, .container .register-box .email {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 15px auto;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: #e4e2e2;
+  border-radius: 10px;
+}
+
+.container .register-box .username:focus, .container .register-box .password:focus, .container .register-box .email:focus {
+  background-color: whitesmoke;
+}
+
+.container .register-box button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px auto;
+  height: 60px;
+  width: 60px;
+  background: #e4e2e2 url(/styles/icons/login-button.svg) center no-repeat;
+  border: none;
+  border-radius: 15px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.container .register-box button:hover {
+  background-color: cadetblue;
+}
+
+.container .register-box a {
+  color: darkslategrey;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  margin: 0 auto;
+}
+
+.container .register-box a:hover {
+  color: cadetblue;
+}
+
+.container .register-box .signin-redirect {
+  color: darkslategrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.container .register-box .signin-redirect:hover {
+  color: cadetblue;
+}
+/*# sourceMappingURL=register.css.map */
